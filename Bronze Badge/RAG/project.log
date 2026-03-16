@@ -1,18 +1,208 @@
-2026-03-14 20:33:07,247 - my_project - INFO - Starting Load documents from C:\Abhishek\publish_projects\genai\Bronze Badge\RAG\files
-2026-03-14 20:33:07,249 - my_project - INFO - Loading PDF documents of codeigniter_tutorial.pdf
-2026-03-14 20:33:07,348 - my_project - ERROR - Error loading documents: `pypdf` package not found, please install it with `pip install pypdf`
-2026-03-14 20:36:41,379 - my_project - INFO - Starting Load documents from C:\Abhishek\publish_projects\genai\Bronze Badge\RAG\files
-2026-03-14 20:36:41,380 - my_project - INFO - Loading PDF documents of codeigniter_tutorial.pdf
-2026-03-14 20:36:43,677 - my_project - INFO - Finished loading documents. Total documents loaded: 22
-2026-03-14 20:37:24,251 - my_project - INFO - Starting Load documents from C:\Abhishek\publish_projects\genai\Bronze Badge\RAG\files
-2026-03-14 20:37:24,254 - my_project - INFO - Loading PDF documents of codeigniter_tutorial.pdf
-2026-03-14 20:37:26,227 - my_project - INFO - Finished loading documents. Total documents loaded: 22
-2026-03-14 20:39:00,328 - my_project - INFO - Starting Load documents from C:\Abhishek\publish_projects\genai\Bronze Badge\RAG\files
-2026-03-14 20:39:00,329 - my_project - INFO - Loading PDF documents of codeigniter_tutorial.pdf
-2026-03-14 20:39:03,217 - my_project - INFO - Finished loading documents. Total documents loaded: 22
-2026-03-14 20:40:36,779 - my_project - INFO - Starting Load documents from C:\Abhishek\publish_projects\genai\Bronze Badge\RAG\files
-2026-03-14 20:40:36,779 - my_project - INFO - Starting Load documents from C:\Abhishek\publish_projects\genai\Bronze Badge\RAG\files
-2026-03-14 20:40:36,780 - my_project - INFO - Loading PDF documents of codeigniter_tutorial.pdf
-2026-03-14 20:40:36,780 - my_project - INFO - Loading PDF documents of codeigniter_tutorial.pdf
-2026-03-14 20:40:39,383 - my_project - INFO - Finished loading documents. Total documents loaded: 22
-2026-03-14 20:40:39,383 - my_project - INFO - Finished loading documents. Total documents loaded: 22
+2026-03-15 00:12:29,927 - __main__ - INFO - RAG Application started
+2026-03-15 00:12:29,927 - __main__ - INFO - Using Rag
+2026-03-15 00:12:29,931 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2026-03-15 00:12:29,932 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2026-03-15 00:12:31,011 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-15 00:12:31,045 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json "HTTP/1.1 200 OK"
+2026-03-15 00:12:31,341 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-03-15 00:12:31,345 - huggingface_hub.utils._http - WARNING - Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-03-15 00:12:32,644 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-03-15 00:12:32,873 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-15 00:12:32,896 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-03-15 00:12:33,119 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/README.md "HTTP/1.1 307 Temporary Redirect"
+2026-03-15 00:12:33,146 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/README.md "HTTP/1.1 200 OK"
+2026-03-15 00:12:33,379 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-15 00:12:33,408 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json "HTTP/1.1 200 OK"
+2026-03-15 00:12:33,639 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/sentence_bert_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-15 00:12:33,667 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/sentence_bert_config.json "HTTP/1.1 200 OK"
+2026-03-15 00:12:33,898 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json "HTTP/1.1 404 Not Found"
+2026-03-15 00:12:34,127 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-15 00:12:34,200 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config.json "HTTP/1.1 200 OK"
+Loading weights: 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 103/103 [00:00<00:00, 2677.82it/s]
+BertModel LOAD REPORT from: sentence-transformers/all-MiniLM-L6-v2
+Key                     | Status     | Details
+------------------------+------------+--------
+embeddings.position_ids | UNEXPECTED |
+
+Notes:
+- UNEXPECTED    :can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+2026-03-15 00:12:34,739 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-15 00:12:34,764 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config.json "HTTP/1.1 200 OK"
+2026-03-15 00:12:34,999 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-15 00:12:35,025 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-03-15 00:12:35,269 - httpx - INFO - HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-03-15 00:12:35,504 - httpx - INFO - HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-03-15 00:12:35,929 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/1_Pooling/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-15 00:12:35,957 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/1_Pooling%2Fconfig.json "HTTP/1.1 200 OK"
+2026-03-15 00:12:36,194 - httpx - INFO - HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2 "HTTP/1.1 200 OK"
+2026-03-15 00:12:37,969 - src.venctor_store - INFO - Loading FAISS index from C:\Abhishek\publish_projects\genai\Bronze Badge\RAG\faiss_store
+2026-03-15 00:12:37,971 - src.venctor_store - INFO - FAISS index loaded successfully
+Batches: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00, 16.95it/s]
+2026-03-15 00:12:38,039 - src.venctor_store - INFO - Searching for relevant documents for the query: what is difference between RISC and CISC process/controller ?
+2026-03-15 00:12:38,040 - src.venctor_store - INFO - Search completed. Found 0 relevant documents for the query.
+No relevant documents found.
+2026-03-15 00:12:38,041 - src.venctor_store - INFO - Generating LLM response based on the retrieved context.
+2026-03-15 00:12:38,042 - src.venctor_store - INFO - Invoking LLM to generate response.
+2026-03-15 00:12:38,472 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-15 00:12:38,525 - src.venctor_store - INFO - LLM response generated successfully.
+2026-03-15 00:12:38,525 - __main__ - INFO - Search Result: No information available to provide a concise answer.
+
+However, based on general knowledge, here's a brief answer:
+
+RISC (Reduced Instruction Set Computing) and CISC (Complex Instruction Set Computing) differ in their instruction set architecture:
+
+- RISC: Uses a simpler instruction set with fewer, more general-purpose instructions, relying on software to perform complex tasks.
+- CISC: Uses a more complex instruction set with more, specialized instructions, often combining multiple steps into a single instruction.
+
+If you need more detailed information, please provide additional context.
+2026-03-15 00:12:38,527 - __main__ - INFO - RAG Application finished
+
+(venv) C:\Abhishek\publish_projects\genai\Bronze Badge\RAG>python rag.py
+2026-03-15 00:13:57,412 - __main__ - INFO - RAG Application started
+2026-03-15 00:16:46,392 - __main__ - INFO - Using Rag
+2026-03-15 00:16:46,412 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2026-03-15 00:16:46,413 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2026-03-15 00:16:48,069 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-15 00:16:48,099 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json "HTTP/1.1 200 OK"
+2026-03-15 00:16:48,335 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-15 00:16:48,365 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-03-15 00:16:48,594 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-15 00:16:48,627 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-03-15 00:16:48,863 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/README.md "HTTP/1.1 307 Temporary Redirect"
+2026-03-15 00:16:48,897 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/README.md "HTTP/1.1 200 OK"
+2026-03-15 00:16:49,146 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-03-15 00:16:49,150 - huggingface_hub.utils._http - WARNING - Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-03-15 00:16:49,189 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json "HTTP/1.1 200 OK"
+2026-03-15 00:16:49,425 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/sentence_bert_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-15 00:16:49,467 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/sentence_bert_config.json "HTTP/1.1 200 OK"
+2026-03-15 00:16:49,705 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json "HTTP/1.1 404 Not Found"
+2026-03-15 00:16:49,943 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-15 00:16:49,970 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config.json "HTTP/1.1 200 OK"
+Loading weights: 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 103/103 [00:00<00:00, 2706.00it/s]
+BertModel LOAD REPORT from: sentence-transformers/all-MiniLM-L6-v2
+Key                     | Status     | Details
+------------------------+------------+--------
+embeddings.position_ids | UNEXPECTED |
+
+Notes:
+- UNEXPECTED    :can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+2026-03-15 00:16:50,475 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-15 00:16:50,508 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config.json "HTTP/1.1 200 OK"
+2026-03-15 00:16:50,746 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-15 00:16:50,778 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-03-15 00:16:51,043 - httpx - INFO - HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-03-15 00:16:51,283 - httpx - INFO - HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-03-15 00:16:51,703 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/1_Pooling/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-15 00:16:51,736 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/1_Pooling%2Fconfig.json "HTTP/1.1 200 OK"
+2026-03-15 00:16:51,972 - httpx - INFO - HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2 "HTTP/1.1 200 OK"
+2026-03-15 00:16:53,734 - src.venctor_store - INFO - Loading FAISS index from C:\Abhishek\publish_projects\genai\Bronze Badge\RAG\faiss_store
+2026-03-15 00:16:53,737 - src.venctor_store - INFO - FAISS index loaded successfully
+Batches: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00, 19.34it/s]
+2026-03-15 00:16:53,804 - src.venctor_store - INFO - Searching for relevant documents for the query: what is difference between RISC and CISC process/controller ?
+2026-03-15 00:16:53,806 - src.venctor_store - INFO - Search completed. Found 2 relevant documents for the query.
+ES Unit-4 Notes
+
+
+
+
+• Always compares the execution completion time (ie the remaining execution
+time for the new process) of a new process entered the ‗Ready‘ queue with
+the remaining time for completion of the currently executing process and
+schedules the process with shortest remaining time for execution.
+EXAMPLE: Three processes with process IDs P1, P2, P3 with estimated
+completion time 10, 5, 7 milliseconds respectively enters the ready queue together.
+A new process P4 with estimated completion time 2ms enters the ‗Ready‘ queue
+after 2ms. Assume all the processes contain only CPU operation and no I/O
+operations are involved.
+Solution: At the beginning, there are only three processes (P1, P2 and  P3)
+available in the ‗Ready‘ queue and the SRT scheduler picks up the process with the
+Shortest remaining time for execution completion (In this example P2 with
+remaining time 5ms) for scheduling. Now process P4 with estimated execution
+completion time 2ms enters the ‗ Ready‘ queue after 2ms  of start of execution of
+P2. The processes are re-scheduled for execution in the following order
+
+
+P2
+
+P4
+
+P2
+
+P3
+
+P1
+0 2 4 7 14 24
+2 2 3 7 10
+
+The waiting time for all the processes are given as
+Waiting Time for P2 = 0 ms + (4 -2) ms = 2ms (P2 starts executing first and is
+interrupted by P4 and has to wait till the completion of
+P4 to get the next CPU slot)
+Waiting Time for P4 = 0 ms (P4 starts executing by preempting P2 since the
+execution time for completion of P4 (2ms) is less
+than that of the Remaining time for execution
+completion of P2 (Here it is 3ms))
+Waiting Time for P3 = 7 ms (P3 starts executing after completing P4 and P2)
+
+ES Unit-4 Notes
+
+
+
+
+
+The waiting time for all the processes are given as
+Waiting Time for P1 = 0 + (11-5) = 0+6 =6 ms (P1 starts executing first and gets
+Preempted by P4 after 5ms and again gets the CPU time
+after completion of P4)
+Waiting Time for P4 = 0 ms (P4 starts executing immediately on entering the
+‗Ready‘ queue, by preempting P1)
+Waiting Time for P3 = 16 ms (P3 starts executing after completing P1 and P4)
+Waiting Time for P2 = 23 ms (P2 starts executing after completing P1, P4 and P3)
+Average waiting time = (Waiting time for all the processes) / No. of Processes
+= (Waiting time for (P1+P4+P3+P2)) / 4
+= (6 + 0 + 16 + 23)/4 = 45/4
+= 11.25 milliseconds
+Turn Around Time (TAT) for P1 = 16 ms (Time spent in Ready Queue + Execution Time)
+Turn Around Time (TAT) for P4 = 6ms (Time spent in Ready Queue + Execution Time
+= (Execution Start Time – Arrival Time) + Estimated Execution Time = (5-5) + 6 = 0 + 6)
+
+Turn Around Time (TAT) for P3 = 23 ms ( Time spent in Ready Queue + Execution Time)
+Turn Around Time (TAT) for P2 = 28 ms ( Time spent in Ready Queue + Execution Time)
+Average Turn Around Time= (Turn Around Time for all the processes) / No. of Processes
+= (Turn Around Time for (P2+P4+P3+P1)) / 4
+= (16+6+23+28)/4 = 73/4
+= 18.25 milliseconds
+2026-03-15 00:16:53,851 - src.venctor_store - INFO - Generating LLM response based on the retrieved context.
+2026-03-15 00:16:53,853 - src.venctor_store - INFO - Invoking LLM to generate response.
+2026-03-15 00:16:54,814 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-15 00:16:54,860 - src.venctor_store - INFO - LLM response generated successfully.
+2026-03-15 00:16:54,861 - __main__ - INFO - Search Result: The given context is about Scheduling in Operating Systems, specifically about Shortest Remaining Time (SRT) scheduling algorithm.
+
+However, based on the information provided, I can see that it does not directly relate to RISC (Reduced Instruction Set Computing) and CISC (Complex Instruction Set Computing) process/controllers.
+
+RISC and CISC are processor architectures. The main differences between them are:
+
+1. **Instruction Set Design**:
+   - **CISC**: Complex Instruction Set Computing has a more complex instruction set that allows for more instructions to be combined into a single instruction, which results in more clock cycles for each instruction.
+   - **RISC**: Reduced Instruction Set Computing has a simpler instruction set with fewer instructions, and these instructions are designed to be more efficient and faster.
+
+2. **Clock Cycles**:
+   - **CISC**: More clock cycles are required because of its complex instruction set.
+   - **RISC**: Fewer clock cycles are required because of its simple and efficient instruction set.
+
+3. **Instruction Execution**:
+   - **CISC**: Instructions may require more than one clock cycle for execution.
+   - **RISC**: Instructions require only one clock cycle for execution.
+
+4. **Pipeline Stages**:
+   - **CISC**: More pipeline stages are required due to its complex instruction set.
+   - **RISC**: Fewer pipeline stages are required due to its simple instruction set.
+
+5. **Power Consumption**:
+   - **CISC**: Generally consumes more power due to its complex instruction set.
+   - **RISC**: Consumes less power due to its simple instruction set.
+
+In essence, RISC processors are generally faster, more power-efficient, and easier to design than CISC processors, but may require more instructions to perform a task.
+2026-03-15 00:16:54,871 - __main__ - INFO - RAG Application finished
