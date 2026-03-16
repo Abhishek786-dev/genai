@@ -1,0 +1,9 @@
+langchain
+langchain-text-splitters
+langchain-community
+langchain-core
+bs4
+faiss-cpu
+chromadb
+sentence-transformers
+langchain-groq

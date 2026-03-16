@@ -1,0 +1,18 @@
+2026-03-14 20:33:07,247 - my_project - INFO - Starting Load documents from C:\Abhishek\publish_projects\genai\Bronze Badge\RAG\files
+2026-03-14 20:33:07,249 - my_project - INFO - Loading PDF documents of codeigniter_tutorial.pdf
+2026-03-14 20:33:07,348 - my_project - ERROR - Error loading documents: `pypdf` package not found, please install it with `pip install pypdf`
+2026-03-14 20:36:41,379 - my_project - INFO - Starting Load documents from C:\Abhishek\publish_projects\genai\Bronze Badge\RAG\files
+2026-03-14 20:36:41,380 - my_project - INFO - Loading PDF documents of codeigniter_tutorial.pdf
+2026-03-14 20:36:43,677 - my_project - INFO - Finished loading documents. Total documents loaded: 22
+2026-03-14 20:37:24,251 - my_project - INFO - Starting Load documents from C:\Abhishek\publish_projects\genai\Bronze Badge\RAG\files
+2026-03-14 20:37:24,254 - my_project - INFO - Loading PDF documents of codeigniter_tutorial.pdf
+2026-03-14 20:37:26,227 - my_project - INFO - Finished loading documents. Total documents loaded: 22
+2026-03-14 20:39:00,328 - my_project - INFO - Starting Load documents from C:\Abhishek\publish_projects\genai\Bronze Badge\RAG\files
+2026-03-14 20:39:00,329 - my_project - INFO - Loading PDF documents of codeigniter_tutorial.pdf
+2026-03-14 20:39:03,217 - my_project - INFO - Finished loading documents. Total documents loaded: 22
+2026-03-14 20:40:36,779 - my_project - INFO - Starting Load documents from C:\Abhishek\publish_projects\genai\Bronze Badge\RAG\files
+2026-03-14 20:40:36,779 - my_project - INFO - Starting Load documents from C:\Abhishek\publish_projects\genai\Bronze Badge\RAG\files
+2026-03-14 20:40:36,780 - my_project - INFO - Loading PDF documents of codeigniter_tutorial.pdf
+2026-03-14 20:40:36,780 - my_project - INFO - Loading PDF documents of codeigniter_tutorial.pdf
+2026-03-14 20:40:39,383 - my_project - INFO - Finished loading documents. Total documents loaded: 22
+2026-03-14 20:40:39,383 - my_project - INFO - Finished loading documents. Total documents loaded: 22
